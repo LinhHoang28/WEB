@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dang Hoang Linh</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header container">
+    <a class="logo" href="#">Linh Hoang</a>
+    <nav class="site-nav">
+      <ul>
+        <li><a href="#about">Introduce</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <button id="theme-toggle">Dark mode</button>
+  </header>
+  <main class="container">
+    <section id="about" class="hero">
+  <div>
+    <h1>Dang Hoang Linh</h1>
+    <h3 class="tagline">"Fate may draw the blueprint, but you build the life."</h3>
+    <p>
+      <a href="https://phys.hcmus.edu.vn/" target="_blank" rel="noopener noreferrer">Faculty of Physics - Engineering Physics</a>, <br>
+      <a href="https://www.hcmus.edu.vn/" target="_blank" rel="noopener noreferrer">Vietnam National University Ho Chi Minh City - VNU-HCM</a>
+    </p>
+    <div class="action-links">
+      <a class="button" href="#contact">Contact</a>
+      <a class="button" href="https://github.com/LinhHoang28" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a class="button" href="https://www.linkedin.com/in/hoàng-linh-đặng-2776a1411" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    </div>
+  </div>
+  <img src="me.png" alt="HoangLinh">
+</section>
+    <section id="projects">
+      <h2>Projects</h2>
+      <div id="filters"></div>
+      <div id="project-list" class="projects"></div>
+      <template id="project-card">
+        <article class="card">
+          <h3></h3>
+          <p class="tags"></p>
+        </article>
+      </template>
+    </section>
+    
+    <section id="repos">
+      <h2>Repo gần đây</h2>
+      <p id="repos-state">Đang tải…</p>
+      <ul id="repo-list"></ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <form>
+        <label for="name">Name <span class="required">*</span></label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email <span class="required">*</span></label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">Message <span class="required">*</span></label>
+        <textarea id="message" name="message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+  <footer class="container">© 2026 Dang Hoang Linh</footer>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
